@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* box */
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   height: 100vh;
-  margin: 0;
   overflow: hidden;
-  font-family: Roboto, sans-serif;
 }
 
 img {
@@ -12,15 +18,82 @@ img {
 }
 
 button {
-  font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
-  background: #eee;
+  padding: 8px 12px;
 }
 
 input {
+  width: 400px;
   border: 1px solid #ddd;
   border-radius: 16px;
   padding: 8px 24px;
-  width: 400px;
+}
+
+.header,
+.footer {
+  padding: 24px 16px;
+}
+
+/* decoration */
+body {
+  font-family: Roboto, sans-serif;
+}
+
+button {
+  font-family: Roboto, sans-serif;
+  background: #eee;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+/* layout */
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header,
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.left-links, 
+.right-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
 }
