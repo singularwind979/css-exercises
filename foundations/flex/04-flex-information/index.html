@@ -5,34 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Information</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <section class="plants-info">
+    <div class="section flexbox-col gap-elem-wide">
       <div class="title">Information!</div>
       
-      <div class="plants">
-        <div class="plant">
-          <img src="./images/barberry.png" alt="barberry">
-          <div class="text">This is a type of plant. We love this one.</div>
+      <div class="cards flexbox-row items-center gap-elem">
+        <div class="card flexbox-col gap-elem-tight">
+          <img class="card-img self-center" src="./images/barberry.png" alt="barberry">
+          <div class="card-text">This is a type of plant. We love this one.</div>
         </div>
         
-        <div class="plant">
-          <img src="./images/chilli.png" alt="chili">
-          <div class="text">This is another type of plant. Isn't it nice?</div>
+        <div class="card flexbox-col gap-elem-tight">
+          <img class="card-img self-center" src="./images/chilli.png" alt="chili">
+          <div class="card-text">This is another type of plant. Isn't it nice?</div>
         </div>
         
-        <div class="plant">
-          <img src="./images/pepper.png" alt="pepper">
-          <div class="text">We have so many plants. Yay plants.</div>
+        <div class="card flexbox-col gap-elem-tight">
+          <img class="card-img self-center" src="./images/pepper.png" alt="pepper">
+          <div class="card-text">We have so many plants. Yay plants.</div>
         </div>
         
-        <div class="plant">
-          <img src="./images/saffron.png" alt="saffron">
-          <div class="text">I'm running out of things to say about plants.</div>
+        <div class="card flexbox-col gap-elem-tight">
+          <img class="card-img self-center" src="./images/saffron.png" alt="saffron">
+          <div class="card-text">I'm running out of things to say about plants.</div>
         </div>
+
       </div>
-    </section>
+    </div>
 
     <!-- disregard this section, it's here to give attribution to the creator of these icons -->
     <div class="footer">
