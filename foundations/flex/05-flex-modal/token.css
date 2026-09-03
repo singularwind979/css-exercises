@@ -1,0 +1,30 @@
+/* token.css — value space */
+
+:root {
+  /* ---- numeric distance track ---- */
+  --space-1:   0.0625rem;  /* 1px  */
+  --space-2:   0.125rem;   /* 2px  */
+  --space-4:   0.25rem;    /* 4px  */
+  --space-8:   0.5rem;     /* 8px  */
+  --space-12:  0.75rem;    /* 12px */
+  --space-16:  1rem;       /* 16px */
+  --space-24:  1.5rem;     /* 24px */
+  --space-32:  2rem;       /* 32px */
+  --space-48:  3rem;       /* 48px */
+
+  /* ---- semantic distance track ---- */
+  --space-elem-tight: var(--space-4);    /* element interior, tight */
+  --space-elem:       var(--space-8);    /* element interior */
+  --space-elem-wide:  var(--space-12);   /* element interior, loose */
+  --space-comp:       var(--space-16);   /* component interior */
+  --space-comp-wide:  var(--space-24);   /* component interior, loose */
+  --space-sect:       var(--space-32);   /* between sections */
+  --space-page:       var(--space-48);   /* between pages */
+
+  /* ---- corner value track ---- */
+  --corner-square:  0;
+  --corner-control: 4px;
+  --corner-card:    8px;
+  --corner-surface: 16px;
+  --corner-pill:    9999px;
+}
