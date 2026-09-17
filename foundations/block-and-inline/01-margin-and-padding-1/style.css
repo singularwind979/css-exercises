@@ -1,28 +1,138 @@
-body {
-  max-width: 600px;
-  margin: 0 auto;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  border-style: solid;
+  border-width: 0;
+  box-sizing: border-box;
 }
 
-.one {
-  background: pink;
-  border: 3px solid blue;
-  /* CHANGE ME */
-  padding: 32px;
-  margin: 12px;
+/* Color tokens — Tailwind standard palette */
+:root {
+  --color-rose-100: #ffe4e6;
+  --color-rose-200: #fecdd3;
+  --color-rose-800: #9f1239;
+
+  --color-sky-100: #e0f2fe;
+  --color-sky-200: #bae6fd;
+  --color-sky-800: #075985;
+
+  --color-orange-100: #ffedd5;
+  --color-orange-200: #fed7aa;
+  --color-orange-800: #9a3412;
+
+  /* Spacing tokens — px shown in class name, rem stored (1rem = 16px) */
+  --space-8: 0.5rem;
+  --space-16: 1rem;
+  --space-24: 1.5rem;
+  --space-32: 2rem;
+  --space-48: 3rem;
+  --space-64: 4rem;
+
+  /* Fixed space tokens — px (not rem) */
+  --space-fixed-1: 1px;
+  --space-fixed-2: 2px;
+  --space-fixed-4: 4px;
 }
 
-.two {
-  background: lightblue;
-  border: 3px solid purple;
-  /* CHANGE ME */
-  margin-bottom: 48px;
+/* Background color utilities */
+.bg-rose-100 {
+  background-color: var(--color-rose-100);
 }
 
-.three {
-  background: peachpuff;
-  border: 3px solid brown;
-  width: 200px;
-  /* CHANGE ME */
-  padding: 32px;
-  margin-left: auto;
+.bg-sky-100 {
+  background-color: var(--color-sky-100);
+}
+
+.bg-orange-100 {
+  background-color: var(--color-orange-100);
+}
+
+/* Border color utilities */
+.b-rose-200 {
+  border-color: var(--color-rose-200);
+}
+
+.b-sky-200 {
+  border-color: var(--color-sky-200);
+}
+
+.b-orange-200 {
+  border-color: var(--color-orange-200);
+}
+
+/* Border width utilities */
+.b-1 {
+  border-width: var(--space-fixed-1);
+}
+
+.b-2 {
+  border-width: var(--space-fixed-2);
+}
+
+.b-4 {
+  border-width: var(--space-fixed-4);
+}
+
+/* Font color utilities */
+.f-rose-800 {
+  color: var(--color-rose-800);
+}
+
+.f-sky-800 {
+  color: var(--color-sky-800);
+}
+
+.f-orange-800 {
+  color: var(--color-orange-800);
+}
+
+/* Padding utilities */
+.p-8 {
+  padding: var(--space-8);
+}
+
+.p-16 {
+  padding: var(--space-16);
+}
+
+.p-24 {
+  padding: var(--space-24);
+}
+
+.p-32 {
+  padding: var(--space-32);
+}
+
+.p-48 {
+  padding: var(--space-48);
+}
+
+.p-64 {
+  padding: var(--space-64);
+}
+
+/* Margin utilities */
+.m-8 {
+  margin: var(--space-8);
+}
+
+.m-16 {
+  margin: var(--space-16);
+}
+
+.m-24 {
+  margin: var(--space-24);
+}
+
+.m-32 {
+  margin: var(--space-32);
+}
+
+.m-48 {
+  margin: var(--space-48);
+}
+
+.m-64 {
+  margin: var(--space-64);
 }
