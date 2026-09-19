@@ -1,0 +1,223 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  border-style: solid;
+  border-width: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Warm */
+  --color-stone-100: #f5f5f4;
+  --color-stone-200: #e7e5e4;
+  --color-stone-800: #292524;
+
+  --color-rose-100: #ffe4e6;
+  --color-rose-200: #fecdd3;
+  --color-rose-800: #9f1239;
+
+  --color-amber-100: #fef3c7;
+  --color-amber-200: #fde68a;
+  --color-amber-800: #92400e;
+
+  /* Cool */
+  --color-zinc-100: #f4f4f5;
+  --color-zinc-200: #e4e4e7;
+  --color-zinc-800: #27272a;
+
+  --color-sky-100: #e0f2fe;
+  --color-sky-200: #bae6fd;
+  --color-sky-800: #075985;
+
+  --color-emerald-100: #d1fae5;
+  --color-emerald-200: #a7f3d0;
+  --color-emerald-800: #065f46;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Grain tokens — px (not rem) */
+  --grain-1: 1px;
+  --grain-2: 2px;
+  --grain-3: 4px;
+
+  /* Border tokens — alias grain */
+  --border-1: var(--grain-1);
+  --border-2: var(--grain-2);
+  --border-3: var(--grain-3);
+
+  /* Scale tokens — primitive size scale, rem stored (1rem = 16px) */
+  --scale-1: 0.375rem;   /* 6px */
+  --scale-2: 0.5rem;     /* 8px */
+  --scale-3: 0.75rem;    /* 12px */
+  --scale-4: 1rem;       /* 16px */
+  --scale-5: 1.5rem;     /* 24px */
+  --scale-6: 2rem;       /* 32px */
+  --scale-7: 3rem;       /* 48px */
+  --scale-8: 4rem;       /* 64px */
+  --scale-9: 6rem;       /* 96px */
+  --scale-10: 8rem;      /* 128px */
+
+  /* Semantic tokens — space / font / size alias the scale */
+  --space-1: var(--scale-1);   /* 6px */
+  --space-2: var(--scale-2);   /* 8px */
+  --space-3: var(--scale-3);   /* 12px */
+  --space-4: var(--scale-4);   /* 16px */
+  --space-5: var(--scale-5);   /* 24px */
+  --space-6: var(--scale-6);   /* 32px */
+
+  --font-1: var(--scale-3);   /* 12px */
+  --font-2: var(--scale-4);   /* 16px */
+  --font-3: var(--scale-5);   /* 24px */
+  --font-4: var(--scale-6);   /* 32px */
+  --font-5: var(--scale-7);   /* 48px */
+  --font-6: var(--scale-8);   /* 64px */
+
+  --size-1: var(--scale-5);   /* 24px */
+  --size-2: var(--scale-6);   /* 32px */
+  --size-3: var(--scale-7);   /* 48px */
+  --size-4: var(--scale-8);   /* 64px */
+  --size-5: var(--scale-9);   /* 96px */
+  --size-6: var(--scale-10);  /* 128px */
+
+  /* Font family tokens — Tailwind stacks (reading = serif, ui = sans, code = mono) */
+  --font-reading: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-ui: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-code: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* Font weight & style tokens */
+  --font-light: 300;
+  --font-bold: 700;
+  --font-italic: italic;
+}
+
+/* Background color utilities — bg binds to the -100 shade */
+.bg-stone { background-color: var(--color-stone-100); }
+.bg-rose { background-color: var(--color-rose-100); }
+.bg-amber { background-color: var(--color-amber-100); }
+.bg-zinc { background-color: var(--color-zinc-100); }
+.bg-sky { background-color: var(--color-sky-100); }
+.bg-emerald { background-color: var(--color-emerald-100); }
+.bg-white { background-color: var(--color-white); }
+.bg-black { background-color: var(--color-black); }
+
+/* Border color utilities — b binds to the -200 shade */
+.b-stone { border-color: var(--color-stone-200); }
+.b-rose { border-color: var(--color-rose-200); }
+.b-amber { border-color: var(--color-amber-200); }
+.b-zinc { border-color: var(--color-zinc-200); }
+.b-sky { border-color: var(--color-sky-200); }
+.b-emerald { border-color: var(--color-emerald-200); }
+.b-white { border-color: var(--color-white); }
+.b-black { border-color: var(--color-black); }
+
+/* Font color utilities — font binds to the -800 shade */
+.font-stone { color: var(--color-stone-800); }
+.font-rose { color: var(--color-rose-800); }
+.font-amber { color: var(--color-amber-800); }
+.font-zinc { color: var(--color-zinc-800); }
+.font-sky { color: var(--color-sky-800); }
+.font-emerald { color: var(--color-emerald-800); }
+.font-white { color: var(--color-white); }
+.font-black { color: var(--color-black); }
+
+/* Font family utilities — .font-* named */
+.font-reading { font-family: var(--font-reading); }
+.font-ui { font-family: var(--font-ui); }
+.font-code { font-family: var(--font-code); }
+
+/* Font size utilities — .font-* numbered */
+.font-1 { font-size: var(--font-1); }
+.font-2 { font-size: var(--font-2); }
+.font-3 { font-size: var(--font-3); }
+.font-4 { font-size: var(--font-4); }
+.font-5 { font-size: var(--font-5); }
+.font-6 { font-size: var(--font-6); }
+
+/* margin */
+.m-1 { margin: var(--space-1); }
+.m-2 { margin: var(--space-2); }
+.m-3 { margin: var(--space-3); }
+.m-4 { margin: var(--space-4); }
+.m-5 { margin: var(--space-5); }
+.m-6 { margin: var(--space-6); }
+
+/* padding */
+.p-1 { padding: var(--space-1); }
+.p-2 { padding: var(--space-2); }
+.p-3 { padding: var(--space-3); }
+.p-4 { padding: var(--space-4); }
+.p-5 { padding: var(--space-5); }
+.p-6 { padding: var(--space-6); }
+
+/* border-width */
+.b-1 { border-width: var(--border-1); }
+.b-2 { border-width: var(--border-2); }
+.b-3 { border-width: var(--border-3); }
+
+/* Spacing utilities — 2 directions (x = left/right, y = top/bottom) */
+
+/* margin */
+.m-x-1 { margin-left: var(--space-1); margin-right: var(--space-1); }
+.m-x-2 { margin-left: var(--space-2); margin-right: var(--space-2); }
+.m-x-3 { margin-left: var(--space-3); margin-right: var(--space-3); }
+.m-x-4 { margin-left: var(--space-4); margin-right: var(--space-4); }
+.m-x-5 { margin-left: var(--space-5); margin-right: var(--space-5); }
+.m-x-6 { margin-left: var(--space-6); margin-right: var(--space-6); }
+
+.m-y-1 { margin-top: var(--space-1); margin-bottom: var(--space-1); }
+.m-y-2 { margin-top: var(--space-2); margin-bottom: var(--space-2); }
+.m-y-3 { margin-top: var(--space-3); margin-bottom: var(--space-3); }
+.m-y-4 { margin-top: var(--space-4); margin-bottom: var(--space-4); }
+.m-y-5 { margin-top: var(--space-5); margin-bottom: var(--space-5); }
+.m-y-6 { margin-top: var(--space-6); margin-bottom: var(--space-6); }
+
+.m-x-auto { margin-left: auto; margin-right: auto; }
+.m-y-auto { margin-top: auto; margin-bottom: auto; }
+
+/* padding */
+.p-x-1 { padding-left: var(--space-1); padding-right: var(--space-1); }
+.p-x-2 { padding-left: var(--space-2); padding-right: var(--space-2); }
+.p-x-3 { padding-left: var(--space-3); padding-right: var(--space-3); }
+.p-x-4 { padding-left: var(--space-4); padding-right: var(--space-4); }
+.p-x-5 { padding-left: var(--space-5); padding-right: var(--space-5); }
+.p-x-6 { padding-left: var(--space-6); padding-right: var(--space-6); }
+
+.p-y-1 { padding-top: var(--space-1); padding-bottom: var(--space-1); }
+.p-y-2 { padding-top: var(--space-2); padding-bottom: var(--space-2); }
+.p-y-3 { padding-top: var(--space-3); padding-bottom: var(--space-3); }
+.p-y-4 { padding-top: var(--space-4); padding-bottom: var(--space-4); }
+.p-y-5 { padding-top: var(--space-5); padding-bottom: var(--space-5); }
+.p-y-6 { padding-top: var(--space-6); padding-bottom: var(--space-6); }
+
+/* border-width */
+.b-x-1 { border-left-width: var(--border-1); border-right-width: var(--border-1); }
+.b-x-2 { border-left-width: var(--border-2); border-right-width: var(--border-2); }
+.b-x-3 { border-left-width: var(--border-3); border-right-width: var(--border-3); }
+
+.b-y-1 { border-top-width: var(--border-1); border-bottom-width: var(--border-1); }
+.b-y-2 { border-top-width: var(--border-2); border-bottom-width: var(--border-2); }
+.b-y-3 { border-top-width: var(--border-3); border-bottom-width: var(--border-3); }
+
+/* Size utilities — width + height */
+.size-1 { width: var(--size-1); height: var(--size-1); }
+.size-2 { width: var(--size-2); height: var(--size-2); }
+.size-3 { width: var(--size-3); height: var(--size-3); }
+.size-4 { width: var(--size-4); height: var(--size-4); }
+.size-5 { width: var(--size-5); height: var(--size-5); }
+.size-6 { width: var(--size-6); height: var(--size-6); }
+
+/* Font weight utilities */
+.font-light { font-weight: var(--font-light); }
+.font-bold { font-weight: var(--font-bold); }
+
+/* Font style utilities */
+.font-italic { font-style: var(--font-italic); }
+
+/* Text alignment utilities */
+.text-center { text-align: center; }
+
+/* Display utilities */
+.block { display: block; }
+.inline { display: inline; }
