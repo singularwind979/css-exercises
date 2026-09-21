@@ -5,27 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Header 2</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="layout.css">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <div class="header flexbox-row items-spaced">
-
-      <div class="header-left flexbox-row gap-elem">
-        <div class="logo flex-never self-center">LOGO</div>
-        <ul class="links flexbox-row items-centering gap-elem-wide">
-          <li><a href="https://google.com">link-one</a></li>
-          <li><a href="https://google.com">link-two</a></li>
-          <li><a href="https://google.com">link-three</a></li>
+    <body class="bg-zinc font-ui">
+    <div id="header" class="flexbox-row main-spaced bg-cool-white b-zinc b-1 p-2 r-1 sh-2">
+      <div id="header-left" class="flexbox-row g-2">
+        <div id="logo" class="font-violet font-4 font-bold font-italic">
+          LOGO
+        </div>
+        <ul id="nav" class="flexbox-row cross-center g-1">
+          <li><a class="font-violet" href="https://google.com">link-one</a></li>
+          <li><a class="font-violet" href="https://google.com">link-two</a></li>
+          <li><a class="font-violet" href="https://google.com">link-three</a></li>
         </ul>
       </div>
-
-      <div class="header-right flexbox-row gap-elem-wide">
-        <button class="notifications self-center">1 new notification</button>
-        <div class="profile-image flex-never self-center"></div>
+      <div id="header-right" class="flexbox-row g-1">
+        <button id="notice-btn" class="dark bg-violet font-cool-white p-y-2 p-x-4 r-pill">
+          1 new notification
+        </button>
+        <div id="profile-img" class="flex-rigid dark bg-violet size-3 r-circle sh-1"></div>
       </div>
     </div>
-
   </body>
 </html>
