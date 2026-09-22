@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
     <title>Modal</title>
   </head>
-  <body class="flexbox-centering">
-    <div class="modal flexbox-row gap-elem-wide corner-card p-12">
-      <div class="icon corner-pill">!</div>
-      <div class="message flexbox-col gap-elem">
-        <div class="header flexbox-row items-spaced">
-          <div class="header-text">
-            Are you sure you want to do that?
-          </div>
-          <button class="close corner-pill">✖</button>
+  <body class="font-ui bg-zinc flexbox-row main-center cross-center">
+    <div class="size-x-10 bg-cool-white sh-3 p-4 r-5 flexbox-row g-5">
+      <div class="size-3 bg-slate font-sky font-4 font-bold text-center r-circle flex-rigid">!</div>
+      
+      <div class="flexbox-col g-3">
+        <div class="flexbox-row main-spaced">
+          <span class="font-3 font-rose font-bold">Are you sure you want to do that?</span>
+          <button class="size-1 bg-slate font-slate font-light font-2 b-slate b-1 r-circle">✖</button>
         </div>
-        <div class="content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem consectetur sequi amet aspernatur cumque!
-        </div>
-        <div class="buttons">
-          <button class="continue corner-control b-1 p-x-12 p-y-8">Continue</button>
-          <button class="cancel corner-control b-1 p-x-12 p-y-8">Cancel</button>
+
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi id soluta, numquam minima rerum doloremque eveniet aspernatur beatae commodi. Cupiditate recusandae ad repellendus quidem consectetur sequi amet aspernatur cumque!</div>
+
+        <div class="flexbox-row g-3">
+          <button class="bg-sky font-slate b-sky b-2 p-x-2 p-y-1 r-3">Continue</button>
+          <button class="bg-slate font-sky b-slate b-2 p-x-2 p-y-1 r-3">Cancel</button>
         </div>
       </div>
+      
     </div>
   </body>
 </html>
