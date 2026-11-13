@@ -1,0 +1,15 @@
+/* Layer order declared once, here — an @layer statement may precede @import */
+@layer tokens, elements, utilities;
+
+@import url('tokens.css') layer(tokens);
+@import url('elements.css') layer(elements);
+@import url('utilities.css') layer(utilities);
+
+/* Anything written outside a layer outranks every layer above, which would put
+   it ahead of the utilities. Put your own rules in a layer — `@layer components`
+   — so the utilities keep winning as intended. */
+
+/* Unlayered and !important on purpose: layout-debug outline, kept. */
+* {
+    outline: 1px solid red !important;
+}
