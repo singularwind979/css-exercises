@@ -1,0 +1,79 @@
+/* Elements — bare-element defaults: UA quirks undone, then this project's choices */
+
+/* ===== Undo ===== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-style: solid;
+  border-width: 0;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+}
+
+/* Project choice — nothing may exceed its container. max-width beats width wherever
+   width is set, so this caps the size utilities too: a step is what a box asks for,
+   the container decides what it gets. This is the answer to horizontal scroll */
+*, *::before, *::after {
+  max-width: var(--quarter-4);
+}
+
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+:where(p, h1, h2, h3, h4, h5, h6, li, blockquote, figcaption) {
+  /* anywhere over break-word: it also lets min-content shrink, so one long word
+     can't force a flex or grid item wider than its track */
+  overflow-wrap: anywhere;
+}
+
+:where(p, li, blockquote, figcaption) {
+  /* prose only — a hyphenated heading reads as a mistake. Relies on lang being
+     set on <html>, which index.html does */
+  hyphens: auto;
+}
+
+table {
+  /* inherited, so cells, headers and captions all get it from one declaration.
+     Safe as a default because nothing in a table wants proportional figures —
+     the rare global with no inverse worth writing */
+  font-variant-numeric: tabular-nums;
+}
+
+/* ===== Choice — this project's defaults for bare elements ===== */
+
+body {
+  min-height: 100dvh;
+  line-height: 1.5;
+  background-color: var(--bg-neutral);
+  color: var(--font-neutral);
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+ul[class], ol[class] {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+a[class] {
+  text-decoration: none;
+}
